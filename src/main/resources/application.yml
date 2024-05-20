@@ -1,0 +1,13 @@
+server:
+  port: 8081
+
+spring:
+  kafka:
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    consumer:
+      value-deserializer: org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+springdoc:
+  swagger-ui:
+    path: /sw-ui
